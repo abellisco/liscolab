@@ -8,8 +8,7 @@ RMT Radio Code provides 2 independent inputs and methods to receive and decode t
 
 Download the files.
 
-Place the FreeRTOS-Plus-CLI-vESP32 folder inside the "libraries" folder of your Arduino installation.  It should look like: 
-Arduino/libraries/FreeRTOS-Plus-CLI-vESP32/(files)
+Place the FreeRTOS-Plus-CLI-vESP32 folder inside the "libraries" folder of your Arduino installation: Arduino/libraries/FreeRTOS-Plus-CLI-vESP32/(files)
 
 Place the RMTRC folder inside the "Sketches" folder of your Arduino installation.  Open the RMTRC sketch, Upload the sketch to your ESP32 board, open the Serial Monitor, reset the board and look in the Serial Monitor the startup message showing the PINs to connect, and type "help", to get the list of available command and its syntax.
 
