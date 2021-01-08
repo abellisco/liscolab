@@ -1,4 +1,4 @@
-# LiscoLab.github.io 
+# LiscoLab
 Contributing to the community
 
 Liscovsky-Barrera team.
