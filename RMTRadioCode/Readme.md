@@ -4,11 +4,15 @@ RMT Radio Code relies in the functionalities provided by FreeRTOS and FreeRTOS+C
 
 RMT Radio Code provides 2 independent inputs and methods to receive and decode the Radio Codes; each method is handled by a separate FreeRTOS Task, running simultaneously in parallel. To choose which method will be used to decode the received Radio code, the user has to connect the corresponding input pin to the Data PIN of the RF Receiver. Using a protoboard, the 2 input PINS can be connected simultaneously to the RF Receiver Data PIN, so the user can compare the behavior and the results of the 2 methods. 
 
-The RMT receiver has all the advantages of being based in a hardware peripheral: timing capture is very precise, and the API is simple to use. The end of reception is triggered by a configurable threshold. The main design challenge for this use case is at what point the RMT is to be "fired" to start receiving the RF signal, if you start the receiver at any point, it just keeps grabbing noise. To avoid that, RMT Radio Code relies on the detection of the PulseIn Arduino function to identify when a Radio Code starts (the "SYN" code, see the data sheets of the manufacturers in he Docs folder). 
+# Installation
 
-To decode a bit, the usual method is to capture the pulse timing intervals ("high" and "low"), and based on that compare with the pre defined timings ("protocols") to define if it is a "1" or a "0". Very roughly, this is the method used by the RC-Switch(c) library (read the sources, it is actually much more elaborated). You can also find an Atmel's application Note in the Docs folder explaining this type of method. 
+Download the files
+Place the FreeRTOS-Plus-CLI-vESP32 folder inside the "libraries" folder of your Arduino installation.  It should look like: 
+Arduino/libraries/FreeRTOS-Plus-CLI-vESP32/(files)
 
-PLEASE READ THE INSTALLATION INSTRUCTIONS in the Docs folder, both for the hardware and software. It is recommended to initially start using RMT Radio Code by cross-connecting directly one of the Transmit PINs (either RCSXmit OR RMTXmit, NOT BOTH TOGETHER!!) to the Receive PINs (the receive PINS CAN be connected together) to ensure everything is working correctly. After you are comfortable with the results, start testing using an RF transmitter and a receiver.
+Place the RMTRC folder inside the "Sketches" folder of your Arduino installation.  Open the RMTRC sketch, Upload the sketch to your ESP32 board, open the Serial Monitor, reset the board and look in the Serial Monitor the startup message showing the PINs to connect, and type "help", to get the list of available command and its syntax.
+
+It is recommended to initially start using RMT Radio Code by cross-connecting directly one of the Transmit PINs (either RCSXmit OR RMTXmit, NOT BOTH TOGETHER!!) to the Receive PINs (the receive PINS CAN be connected together) to ensure everything is working correctly. After you are comfortable with the results, start testing using an RF transmitter and a receiver.
 
 Previous knowledge of RC-Switch (specially about protocols and timings), FreeRTOS and FreeRTOS+CLI are expected.
 
