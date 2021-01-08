@@ -6,7 +6,8 @@ RMT Radio Code provides 2 independent inputs and methods to receive and decode t
 
 # Installation
 
-Download the files
+Download the files.
+
 Place the FreeRTOS-Plus-CLI-vESP32 folder inside the "libraries" folder of your Arduino installation.  It should look like: 
 Arduino/libraries/FreeRTOS-Plus-CLI-vESP32/(files)
 
