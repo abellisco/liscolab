@@ -4,6 +4,8 @@ RMT Radio Code provides 2 independent tasks to simultaneously receive and decode
 
 RMT Radio Code provides 2 independent inputs and methods to receive and decode the Radio Codes; each method is handled by a separate FreeRTOS Task, running simultaneously in parallel. To choose which method will be used to decode the received Radio code, the user has to connect the corresponding input pin to the Data PIN of the RF Receiver. Using a protoboard, the 2 input PINS can be connected simultaneously to the RF Receiver Data PIN, so the user can compare the behavior and the results of the 2 methods. 
 
+Note: The current version only allows to transmit and receive Protocols 1 thru 5 (according to RC-Switch(c) denomination) with the RMT peripheral.
+
 # Installation
 
 Clone the repository.
