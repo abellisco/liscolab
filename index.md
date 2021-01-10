@@ -12,5 +12,5 @@ RMTRC (RMT Radio Code) is an interactive Arduino Sketch that can be used to test
 
 ### Free-RTOS-Plus-CLI-vESP32
 
-THis is a modified version of the FreeRTOS+CLI(c) library, that runs on ESP32.  It can be included as an Arduino library, and it is the basis of the interactive Arduino sketches found in this repository.  
+This is a modified version of the FreeRTOS+CLI(c) library, that runs on ESP32.  It can be included as an Arduino library, and it is the basis of the interactive Arduino sketches found in this repository.  
 
