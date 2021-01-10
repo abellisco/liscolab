@@ -14,3 +14,13 @@ RMTRC (RMT Radio Code) is an interactive Arduino Sketch that can be used to test
 
 This is a modified version of the FreeRTOS+CLI(c) library, that runs on ESP32.  It can be included as an Arduino library, and it is the basis of the interactive Arduino sketches found in this repository.  
 
+## ledc-h (Protoboard "companion")
+
+ledc-h is an interactive Arduino sketch, built using FreeRTOS+CLI(c) and ESP-IDF(c) APIs.
+
+It allows interactive access to the following APIs:
+
+    ESP-IDF: ledc, GPIO
+    hal-ledc (hardware-adaptation-layer, used in the Arduino environment)
+
+
