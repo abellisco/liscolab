@@ -22,5 +22,6 @@ It allows interactive access to the following APIs:
 
     ESP-IDF: ledc, GPIO
     hal-ledc (hardware-adaptation-layer, used in the Arduino environment)
+    FreeRTOS Task Utilities: uxTaskGetStackHighWaterMark, vTaskDelay 
 
 
